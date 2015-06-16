@@ -1,0 +1,16 @@
+---
+# defaults file for ansible-role-base-debian
+base_debian_packages:
+  - vim
+  - tree
+  - htop
+  - iftop
+  - iotop
+  - itop
+  - atop
+  - git
+  - emacs  # tim really prefers this
+
+base_debian_global_aliases:
+  - "alias logg='git log --graph --oneline --all --decorate --abbrev-commit'"
+  - "alias ll='ls $LS_OPTIONS -l'"

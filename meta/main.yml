@@ -1,0 +1,7 @@
+---
+galaxy_info:
+  author: Tim Lieberman <tim@timdev.com>
+  description: A general-purpose role that installs packages and sets a few aliases the absence of which tends to annoy Tim.
+  license: MIT
+  min_ansible_version: 1.9
+dependencies: []
