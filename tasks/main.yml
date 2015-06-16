@@ -6,12 +6,12 @@
     state=present
     update_cache=yes
     cache_valid_time=3600
-  with_items: "{{ base_packages }}"
+  with_items: "{{ base_debian_packages }}"
 
 - name: Ensure global shell aliases are up-to-date
   lineinfile:
     dest=/etc/profile
     line="{{ item }}"
-  with_items: "{{ base_global_aliases }}"
+  with_items: "{{ base_debian_global_aliases }}"
   tags:
     - aliases
